@@ -1,0 +1,63 @@
+.stages {
+    min-height: 800px;
+    position: relative;
+    padding: 50px 0;
+    &__title {
+        color: #000;
+        font-size: 28px;
+        font-weight: 600;
+        &_colors {
+            color: #AD00FF;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        row-gap: 15px;
+        margin-top: 30px;
+    }
+    &__item {
+        display: block;
+        width: 80%;
+        overflow-y: hidden;
+        border-radius: 25px;
+        border: 1px solid #ae00ff79;
+        padding: 29px 35px 10px 35px;
+        overflow: hidden;
+        transition: height .3s ease-out;
+        height: 69px;
+        &::marker {
+            color: #AD00FF;
+            background-color: #AD00FF;
+        }
+        &_title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: -10px;
+        }
+        &_head {
+            display: flex;
+            cursor: pointer;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_list {
+            display: flex;
+            flex-direction: column;
+            margin-left: 70px;
+            margin-top: 22px;
+            &-item {
+                color: #3c3c3c;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 13px;
+            }
+        }
+    }
+}
+  
+
+.activeArrow {
+    transform: rotate(-180deg);
+}

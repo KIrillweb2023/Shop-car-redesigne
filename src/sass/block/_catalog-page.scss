@@ -1,0 +1,163 @@
+.catalog{
+    min-height: 1000px;
+    padding: 50px 0;
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text{
+            color: #000;
+            font-size: 46px;
+            font-weight: 700;
+        }
+        &__form{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            &_input{
+                width: 84%;
+                height: 50px;
+                border-radius: 10px;
+                background: #FFF;
+                padding: 0 15px;
+                font-size: 16px;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+            }
+            &_btn{
+                width: 15%;
+                background-color: #AD00FF;
+                height: 50px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        margin-top: 40px;
+        justify-content: space-between;
+
+        &__item{
+            width: 24%;    
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 20px;
+            transition: 0.6s all;
+            &:hover{
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                background-color: #fff;
+            }
+            &.active{
+                .catalog__wrapper__item_btns{
+                  opacity: 1;
+                  transition: 0.6s all;
+                }
+            }
+            &_btns{
+                opacity: 0;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                column-gap: 10px;
+                &-see{
+                    border-radius: 4px;
+                    background: #AD00FF;
+                    width: 150px;
+                    height: 30px;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                &-basket{
+                    border-radius: 4px;
+                    background: #FFF;
+                    border: 1px solid #AD00FF;
+                    width: 150px;
+                    height: 30px;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #AD00FF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 5px;
+                }
+            }
+            &_img{
+                width: 100%;
+                border-radius: 20px;
+            }
+            &_count{
+                margin-top: 25px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &-prize{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #333;
+                }
+                &-sale{
+                    font-size: 16px;
+                    color: #333;
+                    text-decoration: line-through;
+                }
+            }
+            &_title{
+                font-size: 22px;
+                margin-top: 10px;
+                font-weight: 600;
+                font-weight: 700;
+                color: #333;
+            }
+            &_advent{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                column-gap: 50px;
+                &-estimation{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                    img{
+                        width: 20px;
+                    }
+                    .estimation{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #333;
+                    }
+                }
+                &-rewies{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #333;
+                }
+            }
+            &_booking{
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+                column-gap: 50px;
+                &-title{
+                    font-size: 14px;
+                    color: #333;
+                    font-weight: 600;
+                }
+                &-subtitle{
+                    font-size: 14px;
+                    color: #333;
+                    font-weight: 700;
+                    
+                }
+            }
+        }
+    }
+}
