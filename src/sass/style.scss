@@ -1,8 +1,17 @@
+@import "./mixins/mixins";
+
 @import "./block/main-page";
 @import "./block/catalog-page";
 @import "./block/question-page";
 @import "./block/logout";
-@import "./block/login-page";
+@import "./block/info-page";
+@import "./block/profile-page";
+@import "./block/hamburger";
+@import "./block/basket-page";
+@import "./block/require-page";
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +21,7 @@
 body{
     background: #F3f4f5;
 }
+
 @keyframes show_animate{
     0%{
         opacity: 0;
@@ -19,6 +29,9 @@ body{
     100%{
         opacity: 1;
     }
+}
+a{
+    text-decoration: none;
 }
 
 .container {

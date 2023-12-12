@@ -1,0 +1,124 @@
+.menu{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s all;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        .menu__block{
+            left: 0;
+        }
+        .menu__overlay{
+            opacity: 1;
+        }
+    }
+    &__block{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 25%;
+        background: #F8E8FF;
+        z-index: 3;
+        padding: 30px;
+        row-gap: 30px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.6s all;
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_logo{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                text-decoration: none;
+                &-text{
+                    color: #AD00FF;
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+            }
+            &_close{
+                cursor: pointer;
+            }
+        }
+        &__phone{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_text{
+                font-size: 18px;
+                font-weight: 600;
+                color: #333;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                font-size: 22px;
+                color: #AD00FF;
+            }
+        }
+        &__buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btn{
+                border-radius: 10px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 16px;
+                padding: 10px 0;
+                width: 47%;
+            }
+            &_query{
+                background-color: #AD00FF;
+            }
+            &_consultation{
+                background: #404040;
+            }
+        }
+        &__pages{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            &_list{
+                padding-left: 20px;
+                padding-top: 15px;
+                &-link{
+                    color: #333;
+                    font-size: 18px;
+                    font-weight: 600;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &_title{
+                font-weight: 600;
+                font-size: 22px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__overlay{
+        transition: 0.6s all;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.507);
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+    }
+}

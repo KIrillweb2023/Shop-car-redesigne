@@ -1,0 +1,191 @@
+.basket{
+    min-height: 800px;
+    padding: 50px 0;
+    &__wrapper{
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+        &__items{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 70%;
+            height: auto;
+            row-gap: 15px;
+            &_item{
+                width: 32%;
+                cursor: pointer;
+                padding: 15px 10px;
+                background-color: #fff;
+                border-radius: 20px;
+                transition: 0.4s all;
+                &:hover{
+                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                }
+                &.active{
+                    .catalog__wrapper__item_btn{
+                      opacity: 1;
+                      transition: 0.6s all;
+                    }
+                }
+                &-btns{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    &-buy{
+                        border-radius: 4px;
+                        background: #AD00FF;
+                        width: 75%;
+                        height: 40px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    &-delete{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 5px;
+                        border: 1px solid #AD00FF;
+                        background-color: #fff;
+                    }
+                }
+                &-img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+                &-count{
+                    margin-top: 25px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &-prize{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #333;
+                    }
+                    &-sale{
+                        font-size: 16px;
+                        color: #333;
+                        text-decoration: line-through;
+                    }
+                }
+                &-title{
+                    font-size: 22px;
+                    margin-top: 10px;
+                    font-weight: 600;
+                    font-weight: 700;
+                    color: #333;
+                }
+                &-advent{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    column-gap: 50px;
+                    &-estimation{
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        img{
+                            width: 20px;
+                        }
+                        .estimation{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #333;
+                        }
+                    }
+                    &-rewies{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #333;
+                    }
+                }
+                &-booking{
+                    display: flex;
+                    width: 100%;
+                    margin-top: 10px;
+                    column-gap: 50px;
+                    &-title{
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: 600;
+                    }
+                    &-subtitle{
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: 700;
+                        
+                    }
+                }
+            }
+        }
+        &__count{
+            width: 27%;
+            row-gap: 15px;
+            display: flex;
+            flex-direction: column;
+            &_block{
+                border-radius: 12px;
+                background: #FFF;
+                padding: 20px;
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+                &-text{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 40px;
+                    span{
+                        color: #6E7191;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+                    &-money{
+                        font-size: 26px;
+                    }
+                    &-trade{
+                        font-size: 18px;
+                    }
+                    &-clime{
+                        font-size: 18px;
+                    }
+                }
+                &-subtext{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    span{
+                        color: #6E7191;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                   
+                }
+            }
+            &_pay{
+                border-radius: 12px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                row-gap: 5px;
+                background-color: #fff;
+                &-title{
+                    color: #AD00FF;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                &-subtitle{
+                    color: #6E7191;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                &-descr{
+                    color: #A0A3BC;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
