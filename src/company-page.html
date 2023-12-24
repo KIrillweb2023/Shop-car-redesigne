@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
 <body>
     <header class="header">
         <div class="container">
@@ -19,10 +19,8 @@
                 </a>
 
                 <nav class="header__wrapper__nav">
-                    <a href="#" class="header__wrapper__nav_link">Спецпредложения</a>
-                    <a href="#" class="header__wrapper__nav_link">Этапы работы</a>
-                    <a href="#" class="header__wrapper__nav_link">Отзывы</a>
                     <a href="#" class="header__wrapper__nav_link">Контакты</a>
+                    <a href="#" class="header__wrapper__nav_link">Почему мы?</a>
                 </nav>
 
                 <div class="header__wrapper__attribute">
@@ -63,16 +61,17 @@
             </div>
         </div>
     </header>
+
     <nav class="nav">
         <div class="container">
             <div class="nav__wrapper">
-                <div class="nav__wrapper__title">
+                <h6 class="nav__wrapper__title">
                     Стартап компания по продаже автомобилей
-                </div>
+                </h6>
                 <div class="nav__wrapper__hotPhone">
-                    <div class="nav__wrapper__hotPhone_text">
+                    <p class="nav__wrapper__hotPhone_text">
                         Горячая линия:
-                    </div>
+                    </p>
                    
                     <span> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
@@ -86,102 +85,91 @@
     </nav>
 
 
-    <section class="specification">
+    <section class="company">
         <div class="container">
-            <h2 class="specification__title">Характиристика</h2>
+            <h2 class="company__title">О компании</h2>
 
-            <div class="specification__wrapper">
-                <div class="specification__wrapper__slider">
+            <img src="./img/company-img/Group 698.png" alt="" class="company__img">
+            <p class="company__descr">Мы молодая стартап компания по продаже новых и б/у автомобилей в любую точку росии</p>
 
-                    <div class="specification__wrapper__slider_main">
-                        <img src="./img/info-page/cars-info.png" alt="car">
-                    </div>
-                    <div class="specification__wrapper__slider_main">
-                        <img src="./img/info-page/cars-info.png" alt="car">
-                    </div>
-                    <div class="specification__wrapper__slider_main">
-                        <img src="./img/info-page/cars-info.png" alt="car">
-                    </div>
-                    <div class="specification__wrapper__slider_main">
-                        <img src="./img/info-page/cars-info.png" alt="car">
-                    </div>
-                    <div class="specification__wrapper__slider_main">
-                        <img src="./img/info-page/cars-info.png" alt="car">
-                    </div>
-                    <div class="specification__wrapper__slider_main">
-                        <img src="./img/info-page/cars-info.png" alt="car">
-                    </div>
+            <div class="company__info">
+                <h3 class="company__info__title">Информация</h3>
+                <h3 class="company__info__subtitle">Контакты и основная информация о компании</h3>
 
-                    <div class="specification__wrapper__slider_tabs">
-                     
-                            <img src="./img/info-page/cars-info.png" alt="" class="specification__wrapper__slider_tabs-img active">
-                       
-                       
-                            <img src="./img/info-page/cars-info.png" alt="" class="specification__wrapper__slider_tabs-img">
-                      
-                       
-                            <img src="./img/info-page/cars-info.png" alt="" class="specification__wrapper__slider_tabs-img">
-                    
-                            
-                            <img src="./img/info-page/cars-info.png" alt="" class="specification__wrapper__slider_tabs-img">
-                     
-                     
-                            <img src="./img/info-page/cars-info.png" alt="" class="specification__wrapper__slider_tabs-img"> 
-                       
-                     
-                            <img src="./img/info-page/cars-info.png" alt="" class="specification__wrapper__slider_tabs-img">
-                      
-                       
+                <div class="company__info__block">
+                    <div class="company__info__block_item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <path d="M30.4843 21.4427C30.0395 20.3529 28.8667 19.7728 27.7459 20.0833L22.662 21.4895C21.6568 21.7708 20.9578 22.6965 20.9578 23.7512C20.9578 38.2466 32.5468 50 46.8395 50C47.8794 50 48.7922 49.291 49.0695 48.2716L50.456 43.1155C50.7622 41.9789 50.1902 40.7895 49.1157 40.3383L43.5696 37.9947C42.6279 37.5963 41.536 37.8716 40.8948 38.6743L38.5608 41.5629C34.4937 39.6118 31.2007 36.2721 29.2769 32.1473L32.125 29.786C32.9165 29.1298 33.188 28.0283 32.7952 27.0733L30.4843 21.4485V21.4427Z" fill="#AD00FF"/>
+                            <path d="M34.7622 66.8261C39 66.8261 43.1094 65.9851 46.9761 64.3264C50.7126 62.7236 54.0689 60.4285 56.9519 57.5047C59.8349 54.5809 62.098 51.1771 63.6784 47.3878C65.3139 43.4663 66.1432 39.2988 66.1432 35.0011C66.1432 30.7028 65.3139 26.5349 63.6783 22.6131C62.098 18.8235 59.8349 15.4194 56.9519 12.4955C54.0689 9.57164 50.7126 7.27642 46.9761 5.67363C43.1094 4.01495 39 3.17393 34.7622 3.17393C30.5244 3.17393 26.415 4.01495 22.5483 5.67363C18.8118 7.27642 15.4555 9.57164 12.5725 12.4955C9.68954 15.4194 7.42644 18.8235 5.84605 22.6131C4.21053 26.5349 3.38124 30.7028 3.38124 35.0011C3.38124 39.2988 4.21051 43.4663 5.84602 47.3878C7.4264 51.1771 9.68951 54.5809 12.5725 57.5047C15.4555 60.4285 18.8118 62.7236 22.5483 64.3264C26.415 65.9851 30.5244 66.8261 34.7622 66.8261ZM34.7622 70C15.7026 70 0.251709 54.3304 0.251709 35.0011C0.251709 15.6696 15.7026 0 34.7622 0C53.8218 0 69.2727 15.6696 69.2727 35.0011C69.2727 54.3304 53.8218 70 34.7622 70Z" fill="#AD00FF"/>
+                        </svg>
+                        <div class="company__info__block_item-title">Номер нашего менеджера</div>   
+                        <p class="company__info__block_item-information">+7 977 (450) 66-45</p>
                     </div>
-                </div>
-                <div class="specification__wrapper__description">
-                    <div class="specification__wrapper__description_item">
-                        <div class="specification__wrapper__description_item-text">
-                            <h2 class="specification__wrapper__description_item-text-title">Mercedes-Benz G-класс</h2>
-                            <h4 class="specification__wrapper__description_item-text-subtitle">Характиристика</h4>
-                            <ul class="specification__wrapper__description_item-text-descr">
-                                <li>Год выпуска..............................2020</li>
-                                <li>Пробег...............................200332км</li>
-                                <li>Комплектация...........................полная</li>
-                                <li>Состояние........................превосходное</li>
-                                <li>Год выпуска..............................2020</li>
-                                <li>Пробег...............................200332км</li>
-                                <li>Коробка передач....................6 ступеней</li>
-                                <li>Привод...............................передний</li>
-                                <li>Комплектация...........................полная</li>
-                                <li>Состояние........................превосходное</li>
-                            </ul>
-                        </div>
-                        <div class="specification__wrapper__description_item-attributes">
-                            <div class="specification__wrapper__description_item-attributes-prize">
-                                144444444рублей
-                            </div>
-                            <button class="specification__wrapper__description_item-attributes-btn">
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="Group 537">
-                                    <path id="&#208;&#154;&#208;&#190;&#208;&#189;&#209;&#130;&#209;&#131;&#209;&#128; 11" d="M1.44922 1H3.11387C3.43153 1 3.73964 1.09077 3.98703 1.25722C4.23442 1.42367 4.40621 1.65579 4.47387 1.91505L4.92404 3.6287M4.92404 3.6287L5.69176 7.17586C5.86329 7.9811 6.36808 8.7104 7.11794 9.23635C7.8678 9.76231 8.81506 10.0515 9.79422 10.0533H11.6724C12.6199 10.0517 13.5385 9.78086 14.2774 9.2854C15.0162 8.78994 15.5313 8.0993 15.7381 7.32695L16.4487 4.69995C16.4838 4.57208 16.484 4.43926 16.4493 4.31132C16.4146 4.18337 16.3459 4.06359 16.2483 3.96083C16.1507 3.85807 16.0266 3.77496 15.8854 3.71767C15.7441 3.66037 15.5892 3.63036 15.4321 3.62984L4.92404 3.6287Z" stroke="#EDEDF4" stroke-width="2" stroke-linecap="round"/>
-                                    <path id="&#208;&#173;&#208;&#187;&#208;&#187;&#208;&#184;&#208;&#191;&#209;&#129; 7" d="M6.64937 13.9998C6.96809 13.9998 7.22647 13.7746 7.22647 13.4969C7.22647 13.2191 6.96809 12.9939 6.64937 12.9939C6.33064 12.9939 6.07227 13.2191 6.07227 13.4969C6.07227 13.7746 6.33064 13.9998 6.64937 13.9998Z" stroke="#EDEDF4" stroke-width="2"/>
-                                    <path id="&#208;&#173;&#208;&#187;&#208;&#187;&#208;&#184;&#208;&#191;&#209;&#129; 8" d="M14.7451 13.9998C15.0638 13.9998 15.3222 13.7746 15.3222 13.4969C15.3222 13.2191 15.0638 12.9939 14.7451 12.9939C14.4263 12.9939 14.168 13.2191 14.168 13.4969C14.168 13.7746 14.4263 13.9998 14.7451 13.9998Z" stroke="#EDEDF4" stroke-width="2"/>
-                                    </g>
-                                </svg>
-                                В корзину
-                            </button>
-                        </div>
+                    <div class="company__info__block_item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <path d="M30.4843 21.4427C30.0395 20.3529 28.8667 19.7728 27.7459 20.0833L22.662 21.4895C21.6568 21.7708 20.9578 22.6965 20.9578 23.7512C20.9578 38.2466 32.5468 50 46.8395 50C47.8794 50 48.7922 49.291 49.0695 48.2716L50.456 43.1155C50.7622 41.9789 50.1902 40.7895 49.1157 40.3383L43.5696 37.9947C42.6279 37.5963 41.536 37.8716 40.8948 38.6743L38.5608 41.5629C34.4937 39.6118 31.2007 36.2721 29.2769 32.1473L32.125 29.786C32.9165 29.1298 33.188 28.0283 32.7952 27.0733L30.4843 21.4485V21.4427Z" fill="#AD00FF"/>
+                            <path d="M34.7622 66.8261C39 66.8261 43.1094 65.9851 46.9761 64.3264C50.7126 62.7236 54.0689 60.4285 56.9519 57.5047C59.8349 54.5809 62.098 51.1771 63.6784 47.3878C65.3139 43.4663 66.1432 39.2988 66.1432 35.0011C66.1432 30.7028 65.3139 26.5349 63.6783 22.6131C62.098 18.8235 59.8349 15.4194 56.9519 12.4955C54.0689 9.57164 50.7126 7.27642 46.9761 5.67363C43.1094 4.01495 39 3.17393 34.7622 3.17393C30.5244 3.17393 26.415 4.01495 22.5483 5.67363C18.8118 7.27642 15.4555 9.57164 12.5725 12.4955C9.68954 15.4194 7.42644 18.8235 5.84605 22.6131C4.21053 26.5349 3.38124 30.7028 3.38124 35.0011C3.38124 39.2988 4.21051 43.4663 5.84602 47.3878C7.4264 51.1771 9.68951 54.5809 12.5725 57.5047C15.4555 60.4285 18.8118 62.7236 22.5483 64.3264C26.415 65.9851 30.5244 66.8261 34.7622 66.8261ZM34.7622 70C15.7026 70 0.251709 54.3304 0.251709 35.0011C0.251709 15.6696 15.7026 0 34.7622 0C53.8218 0 69.2727 15.6696 69.2727 35.0011C69.2727 54.3304 53.8218 70 34.7622 70Z" fill="#AD00FF"/>
+                        </svg>
+                        <div class="company__info__block_item-title">Номер нашего менеджера</div>   
+                        <p class="company__info__block_item-information">+7 977 (450) 66-45</p>
                     </div>
-
-                    <div class="specification__wrapper__description_descr">
-                        <h2 class="specification__wrapper__description_descr-title">Общая информация</h2>
-                        <p class="specification__wrapper__description_descr-text">
-                            Срочно срочно продаютойота 4runnertrd off roadАмериканцысвежая растаможенная не оформленнаясвет белый жемчуг2019 05 год выпускапробег. 54.000 оргиналобьем 4.0 бензинпривод 4wd подключайемый,,полный ''катализатор на местемашина без вложениясостояние идеальное..
-                        </p>
+                    <div class="company__info__block_item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <path d="M30.4843 21.4427C30.0395 20.3529 28.8667 19.7728 27.7459 20.0833L22.662 21.4895C21.6568 21.7708 20.9578 22.6965 20.9578 23.7512C20.9578 38.2466 32.5468 50 46.8395 50C47.8794 50 48.7922 49.291 49.0695 48.2716L50.456 43.1155C50.7622 41.9789 50.1902 40.7895 49.1157 40.3383L43.5696 37.9947C42.6279 37.5963 41.536 37.8716 40.8948 38.6743L38.5608 41.5629C34.4937 39.6118 31.2007 36.2721 29.2769 32.1473L32.125 29.786C32.9165 29.1298 33.188 28.0283 32.7952 27.0733L30.4843 21.4485V21.4427Z" fill="#AD00FF"/>
+                            <path d="M34.7622 66.8261C39 66.8261 43.1094 65.9851 46.9761 64.3264C50.7126 62.7236 54.0689 60.4285 56.9519 57.5047C59.8349 54.5809 62.098 51.1771 63.6784 47.3878C65.3139 43.4663 66.1432 39.2988 66.1432 35.0011C66.1432 30.7028 65.3139 26.5349 63.6783 22.6131C62.098 18.8235 59.8349 15.4194 56.9519 12.4955C54.0689 9.57164 50.7126 7.27642 46.9761 5.67363C43.1094 4.01495 39 3.17393 34.7622 3.17393C30.5244 3.17393 26.415 4.01495 22.5483 5.67363C18.8118 7.27642 15.4555 9.57164 12.5725 12.4955C9.68954 15.4194 7.42644 18.8235 5.84605 22.6131C4.21053 26.5349 3.38124 30.7028 3.38124 35.0011C3.38124 39.2988 4.21051 43.4663 5.84602 47.3878C7.4264 51.1771 9.68951 54.5809 12.5725 57.5047C15.4555 60.4285 18.8118 62.7236 22.5483 64.3264C26.415 65.9851 30.5244 66.8261 34.7622 66.8261ZM34.7622 70C15.7026 70 0.251709 54.3304 0.251709 35.0011C0.251709 15.6696 15.7026 0 34.7622 0C53.8218 0 69.2727 15.6696 69.2727 35.0011C69.2727 54.3304 53.8218 70 34.7622 70Z" fill="#AD00FF"/>
+                        </svg>
+                        <div class="company__info__block_item-title">Номер нашего менеджера</div>   
+                        <p class="company__info__block_item-information">+7 977 (450) 66-45</p>
+                    </div>
+                    <div class="company__info__block_item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <path d="M30.4843 21.4427C30.0395 20.3529 28.8667 19.7728 27.7459 20.0833L22.662 21.4895C21.6568 21.7708 20.9578 22.6965 20.9578 23.7512C20.9578 38.2466 32.5468 50 46.8395 50C47.8794 50 48.7922 49.291 49.0695 48.2716L50.456 43.1155C50.7622 41.9789 50.1902 40.7895 49.1157 40.3383L43.5696 37.9947C42.6279 37.5963 41.536 37.8716 40.8948 38.6743L38.5608 41.5629C34.4937 39.6118 31.2007 36.2721 29.2769 32.1473L32.125 29.786C32.9165 29.1298 33.188 28.0283 32.7952 27.0733L30.4843 21.4485V21.4427Z" fill="#AD00FF"/>
+                            <path d="M34.7622 66.8261C39 66.8261 43.1094 65.9851 46.9761 64.3264C50.7126 62.7236 54.0689 60.4285 56.9519 57.5047C59.8349 54.5809 62.098 51.1771 63.6784 47.3878C65.3139 43.4663 66.1432 39.2988 66.1432 35.0011C66.1432 30.7028 65.3139 26.5349 63.6783 22.6131C62.098 18.8235 59.8349 15.4194 56.9519 12.4955C54.0689 9.57164 50.7126 7.27642 46.9761 5.67363C43.1094 4.01495 39 3.17393 34.7622 3.17393C30.5244 3.17393 26.415 4.01495 22.5483 5.67363C18.8118 7.27642 15.4555 9.57164 12.5725 12.4955C9.68954 15.4194 7.42644 18.8235 5.84605 22.6131C4.21053 26.5349 3.38124 30.7028 3.38124 35.0011C3.38124 39.2988 4.21051 43.4663 5.84602 47.3878C7.4264 51.1771 9.68951 54.5809 12.5725 57.5047C15.4555 60.4285 18.8118 62.7236 22.5483 64.3264C26.415 65.9851 30.5244 66.8261 34.7622 66.8261ZM34.7622 70C15.7026 70 0.251709 54.3304 0.251709 35.0011C0.251709 15.6696 15.7026 0 34.7622 0C53.8218 0 69.2727 15.6696 69.2727 35.0011C69.2727 54.3304 53.8218 70 34.7622 70Z" fill="#AD00FF"/>
+                        </svg>
+                        <div class="company__info__block_item-title">Номер нашего менеджера</div>   
+                        <p class="company__info__block_item-information">+7 977 (450) 66-45</p>
                     </div>
                 </div>
             </div>
+
+            <div class="company__why">
+                <img src="./img/company-img/Rectangle 315.png" alt="">
+                <div class="company__why__title">Почему мы?</div>
+                <div class="company__why__descr">
+                    За все время мы продали около дясятка тысяч автомобилей и удовлетворили потребности людей 
+                    О нас пишут большое количество отзывов в том числе и другие компании по подаже автомобиле, 
+                    также наша компания предлогает выгодные цены за наилучшие качество
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <section class="preferences">
+    
+        <div class="container">
+            <div class="preferences__wrapper">
+                <h3 class="preferences__wrapper__title">Подберем автомобиль под ваш бюджет и предпочтения</h3>
+                <h5 class="preferences__wrapper__subtitle">Мы сможем подобрать автомобиль по вашим рекомендациям</h5>
 
-
+                <form action="#" class="preferences__wrapper__form">
+                    <div class="preferences__wrapper__form_input">
+                        <label for="max-money" class="preferences__wrapper__form_input-label">Ваш бюджет</label>
+                        <input name="money" type="text" id="max-money" class="preferences__wrapper__form_input-input" placeholder="100000">
+                    </div>
+                    <div class="preferences__wrapper__form_input">
+                        <label for="name-car" class="preferences__wrapper__form_input-label">Выберите марку</label>
+                        <input name="nameCar" type="text" id="name-car" class="preferences__wrapper__form_input-input" placeholder="Nissan Skyline">
+                    </div>
+                    <div class="preferences__wrapper__form_input">
+                        <label for="e-mail" class="preferences__wrapper__form_input-label">Ваш e-mail</label>
+                        <input name="email" type="text" id="e-mail" class="preferences__wrapper__form_input-input" placeholder="example@mail.ru">
+                    </div>
+                    <button class="preferences__wrapper__form_btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -198,7 +186,7 @@
                         ОГРН 1232500013558 | ИНН 2543175720 | КПП 254301001
                     </p>
                 </div>
-               
+            
                 <div class="footer__wrapper__attribute">
                     <h4>9(546) 856 99-67</h4>
                     <p>
@@ -256,6 +244,7 @@
         </div>
         <div class="menu__overlay"></div>
     </div>
+
 
 
     <script src="./js/script.js"></script>

@@ -9,9 +9,23 @@
 @import "./block/hamburger";
 @import "./block/basket-page";
 @import "./block/require-page";
+@import "./block/company-page";
 
 
-
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 * {
     margin: 0;
     padding: 0;

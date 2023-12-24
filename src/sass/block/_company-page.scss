@@ -1,0 +1,79 @@
+.company{
+    padding: 50px 0;
+    height: auto;
+    &__title{
+        @include title_start_page;
+    }
+    &__img{
+        width: 100%;
+        margin-top: 50px;
+    }
+    &__descr{
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__info{
+        margin-top: 50px;
+        &__title{
+            font-size: 26px;
+            font-weight: 600;
+            color: #282828;
+        }
+        &__subtitle{
+            font-size: 18px;
+            color: #555;
+            font-weight: 500;
+        }
+        &__block{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            column-gap: 30px;
+            grid-auto-rows: 260px;
+            grid-template-rows: 260px;
+            row-gap: 30px;
+            &_item{
+                border-radius: 20px;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 30px;
+                background-color: #fff;
+                &-title{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #303030;
+                }
+                &-information{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #303030;
+                }
+            }
+        }
+    }
+    &__why{
+        margin-top: 50px;
+        width: 100%;
+        border-radius: 20px;
+        background: rgba(173, 0, 255, 0.20);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        &__descr{
+            width: 500px;
+            color: #444;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        &__title{
+            font-size: 32px;
+            color: #555;
+            font-weight: 700;
+        }
+    }
+}
