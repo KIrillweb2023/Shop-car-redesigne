@@ -69,6 +69,7 @@
         }
     }
 }
+
 .nav{
     padding: 15px 0;
     width: 100%;
@@ -105,6 +106,7 @@
         }
     }
 }
+
 .main{
     padding: 50px 0;
     height: auto;
@@ -143,12 +145,23 @@
                     font-weight: 700;
                     font-size: 16px;
                     border-radius: 10px;
+                    transition: .5s all;
                 }
                 &-query{
                     background-color: #AD00FF;
+                    border: 2px solid #AD00FF;
+                    &:hover{
+                        background-color: #fff;
+                        color: #333;
+                    }
                 }
                 &-consultation{
                     background-color: #404040;
+                    border: 2px solid #404040;
+                    &:hover{
+                        background-color: #fff;
+                        color: #333;
+                    }
                 }
             }
         }
@@ -336,6 +349,7 @@
         }
     }
 }
+
 .advent{
     padding: 50px 0;
     height: auto;

@@ -1,4 +1,4 @@
-const gulp        = require('gulp');
+const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const webpack = require('webpack-stream');
 
 gulp.task('server', function() {
 
@@ -44,7 +45,30 @@ gulp.task('html', function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src("src/js/**/*.js")
+    return gulp.src("src/js/**/main.js")
+        .pipe(webpack({
+            mode: 'development',
+            output: {
+                filename: 'script.js'
+            },
+            watch: false,
+            devtool: "source-map",
+            module: {
+                rules: [{
+                    test: /\.m?js$/,
+                    exclude: /(node_modules|bower_components)/,
+                    use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [['@babel/preset-env', {
+                            debug: true,
+                            corejs: 3,
+                            useBuiltIns: "usage"
+                        }]]
+                    }}
+                }]
+            }
+        }))
         .pipe(gulp.dest("dist/js"))
         .pipe(browserSync.stream());
 });
